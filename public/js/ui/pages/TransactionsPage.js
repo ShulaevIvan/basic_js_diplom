@@ -18,7 +18,7 @@ class TransactionsPage {
 
         this.element = element
         this.registerEvents()
-    }
+    };
 
     /**
      * Вызывает метод render для отрисовки страницы
@@ -26,10 +26,11 @@ class TransactionsPage {
     update() {
         try {
             this.render(this.lastOptions)
-        } catch {
+        } 
+        catch {
             return null
-        }
-    }
+        };
+    };
 
     /**
      * Отслеживает нажатие на кнопку удаления транзакции
