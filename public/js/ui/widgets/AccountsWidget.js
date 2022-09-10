@@ -16,12 +16,12 @@ class AccountsWidget {
     constructor(element) {
         if (!element) {
             throw new Error('Element was not found!');
-        }
+        };
 
         this.element = element;
         this.registerEvents()
         this.update()
-    }
+    };
 
     /**
      * При нажатии на .create-account открывает окно
