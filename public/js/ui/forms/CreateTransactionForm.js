@@ -10,7 +10,7 @@ class CreateTransactionForm extends AsyncForm {
     constructor(element) {
         super(element);
         this.renderAccountsList();
-    }
+    };
 
     /**
      * Получает список счетов с помощью Account.list
