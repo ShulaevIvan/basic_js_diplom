@@ -14,11 +14,11 @@ class Modal {
     constructor(element) {
         if (!element) {
             throw new Error('Element was not found!');
-        }
+        };
 
         this.element = element;
         this.registerEvents();
-    }
+    };
 
     /**
      * При нажатии на элемент с data-dismiss="modal"
