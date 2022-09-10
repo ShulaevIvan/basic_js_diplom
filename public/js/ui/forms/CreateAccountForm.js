@@ -15,11 +15,12 @@ class CreateAccountForm extends AsyncForm {
                 App.update();
                 App.getModal('createAccount').close()
                 this.element.reset();
-            } else {
+            } 
+            else {
                 alert(JSON.stringify(response.error))
                 this.element.reset()
                 this.element.querySelector('.form-group input').focus()
-            }
+            };
         });
     };
 };
